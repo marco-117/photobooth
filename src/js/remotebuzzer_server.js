@@ -561,7 +561,7 @@ const watchRotaryDt = function watchRotaryDt(err, gpioValue) {
     if (gpioValue) {
          if (rotaryClkPin) {
             /* rotation */
-			if (cnt > 0) { 
+			if (cnt < 0) { 
 				/*delete click count for opposite direction */
 				cnt = 0;
 			}
